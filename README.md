@@ -2,6 +2,8 @@
 
 > GLSL setup for performing a [Fast Fourier Transform][fft] of real-valued input
 
+Please note: the storage format for this module is well defined but somewhat convoluted. Even if you're interested in a real-valued FFT, you may have somewhat easier time using the [glsl-fft][glsl-fft] module if your problem permits.
+
 ## Installation
 
 ```sh
