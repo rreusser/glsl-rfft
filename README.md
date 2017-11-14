@@ -90,7 +90,7 @@ As far as fast Fourier transforms go, it's not particularly optimized, though it
 
 ## JavaScript API
 
-### `require('glsl-rfft')(options)`
+#### `require('glsl-rfft')(options)`
 
 Perform the setup work required to use the FFT kernel in the fragment shader, `index.glsl`. Input arguments are:
 
@@ -108,18 +108,18 @@ Returns a list of phases. Each phase is identified by the name of the Each objec
 
 ## GLSL API
 
-### `#pragma glslify: fft = require(glsl-rfft/fft)`
-### `vec4 fft(sampler2D src, vec2 resolution, float subtransformSize, bool horizontal, bool forward)`
+#### `#pragma glslify: fft = require(glsl-rfft/fft)`
+#### `vec4 fft(sampler2D src, vec2 resolution, float subtransformSize, bool horizontal, bool forward)`
 
 Returns the `gl_FragColor` in order to perform a single pass of the FFT comptuation. Uniforms map directly to the output of the JavaScript setup function, with the exception of `src` which is a `sampler2D` for the input framebuffer or texture.
 
-### `#pragma glslify: untangle = require(glsl-rfft/untangle)`
-### `vec4 untangle(sampler2D src, vec2 resolution, bool horizontal, float normalization)`
+#### `#pragma glslify: untangle = require(glsl-rfft/untangle)`
+#### `vec4 untangle(sampler2D src, vec2 resolution, bool horizontal, float normalization)`
 
 Returns the `gl_FragColor` in order to untangle the output from a pass of the FFT computation.
 
-### `#pragma glslify: tangle = require(glsl-rfft/tangle)`
-### `vec4 tangle(sampler2D src, vec2 resolution, bool horizontal, float normalization)`
+#### `#pragma glslify: tangle = require(glsl-rfft/tangle)`
+#### `vec4 tangle(sampler2D src, vec2 resolution, bool horizontal, float normalization)`
 
 Returns the `gl_FragColor` in order to tangle the output from a pass of the FFT computation.
 
