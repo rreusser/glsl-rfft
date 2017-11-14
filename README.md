@@ -72,7 +72,7 @@ void main () {
 
 ### What does it compute?
 
-This shader computes the 2D [Fast Fourier Transform][fft] of four real-valued input matrices contained in a single four-channel floating point (or half float) WebGL texture. Each channel contains the real-valued input. The results match and are tested against [ndarray-fft][ndarray-fft].
+This shader computes the 2D [Fast Fourier Transform][fft] of four real-valued input matrices contained in a single four-channel floating point (or half float) WebGL texture. Each channel contains one of four real-valued input matrices. The results match and are tested against [ndarray-fft][ndarray-fft].
 
 The output follows the format of Moreland and Angel <a href="#user-content-fftonagpu">[1]</a>. To within a sign, it contains every unique entry of the full complex FFT, but the output is compressed to fit in the same storage space as the input. See <a href="#user-content-fftonagpu">[1]</a> for more details.
 
