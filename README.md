@@ -51,7 +51,7 @@ var forwardTransform = rfft({
 // }]
 ```
 
-Usage of the GLSL fragment shader using the above parameters as uniforms:
+Usage of the GLSL fragment shader using the above parameters as uniforms for the `fft` phase:
 
 ```glsl
 precision highp float;
