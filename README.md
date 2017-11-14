@@ -104,7 +104,7 @@ Perform the setup work required to use the FFT kernel in the fragment shader, `i
 - `height` (`Number`): height of the input. Must be a power of two. Ignored if `size` is specifid.
 - `splitNormalization`: (`Boolean`): If `true`, normalize by `1 / √(width * height)` on both the forward and inverse transforms. If `false`, normalize by `1 / (width * height)` on only the inverse transform. Default is `true`. Provided to avoid catastrophic overflow during the forward transform when using half-float textures. One-way transforms will match [ndarray-fft][ndarray-fft] only if `false`.
 
-Returns a list of phases. Each phase is identified by the name of the Each object in the list is a set of parameters that must either be used to bind the correct framebuffers or passed as uniforms to the fragment shader.
+Returns a list of phases. Each phase is identified by the name of the the corresponding fragment shader and a list of uniforms for each individual pass. Each pass must be rendered to a full-screen quad or triangle from the input specified by `input` and to the output specified by `output`.
 
 ## GLSL API
 
