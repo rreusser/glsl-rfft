@@ -1,6 +1,6 @@
 {
   "name": "glsl-rfft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GLSL setup for performing a Fast Fourier Transform of real-valued input",
   "main": "index.js",
   "directories": {
