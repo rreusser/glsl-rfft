@@ -56,7 +56,7 @@ Usage of the GLSL fragment shader using the above parameters as uniforms for the
 ```glsl
 precision highp float;
 
-#pragma glslify: fft = require(glsl-rfft)
+#pragma glslify: fft = require(glsl-rfft/fft)
 
 uniform sampler2D src;
 uniform vec2 resolution;
