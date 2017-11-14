@@ -74,7 +74,7 @@ void main () {
 
 This shader computes the 2D [Fast Fourier Transform][fft] of four real-valued input matrices contained in a single four-channel floating point (or half float) WebGL texture. Each channel contains the real-valued input. The results match and are tested against [ndarray-fft][ndarray-fft].
 
-The output follows the format of [Moreland and Angel \[1\]][fftonagpu]. To within a sign, it contains every unique entry of the full complex FFT, but the output is compressed to fit in the same storage space as the input. See [\[1\]][fftonagpu] for more details.
+The output follows the format of Moreland and Angel [\[1\]][#fftonagpu]. To within a sign, it contains every unique entry of the full complex FFT, but the output is compressed to fit in the same storage space as the input. See [\[1\]][#fftonagpu] for more details.
 
 ### What is required?
 
@@ -127,6 +127,10 @@ Returns the `gl_FragColor` in order to tangle the output from a pass of the FFT 
 
 - [ndarray-fft][ndarray-fft]
 - [glsl-fft][glsl-fft]
+
+## References
+
+<a href="#fftonagpu">[1]</a> Moreland, K., Angel, E., [The FFT on a GPU][fftonagpu], Graphics Hardware (2003).
 
 ## License
 
