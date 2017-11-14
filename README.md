@@ -92,7 +92,7 @@ As far as fast Fourier transforms go, it's not particularly optimized, though it
 
 #### `require('glsl-rfft')(options)`
 
-Perform the setup work required to use the FFT kernel in the fragment shader, `index.glsl`. Input arguments are:
+Perform the setup work required to compute the real-valued FFT. Input arguments are:
 
 - `input` (`Any`): An identifier or object for the input framebuffer.
 - `output` (`Any`): An identifier or object for the final output framebuffer.
