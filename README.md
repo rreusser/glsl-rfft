@@ -68,6 +68,8 @@ void main () {
 }
 ```
 
+See [test/test.js][test/test.js] for a fully worked forward and inverse transform using [regl][regl].
+
 ## Usage 
 
 ### What does it compute?
